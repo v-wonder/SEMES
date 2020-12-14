@@ -11,7 +11,7 @@ body *{font-family: apple;}
 .eng{font-family: poppins;}
 
 header{width: 100%; position: fixed; top: 0; left:0; z-index: 1000; line-height: 0;}
-.header_wrap img{width: 100%; line-height: 0;}
+header img{width: 100%; line-height: 0;}
 section.slide{margin-top: 84px; background-color: #0e141f;}
 .swiper-container {
     width: 100%;
@@ -339,6 +339,7 @@ section{width: 100%;}
 }
 @media only screen and (min-width: 1921px){
     header{width: 1903px; left: 12.6%;}
+    header img{width: 100%;}
     .fixed_btn{right: 360px;}
 }
 
