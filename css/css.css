@@ -1,17 +1,17 @@
 
 body, html {
-    width: 1920px;
+    width: 1902px;
     position: relative;
     height: 100%;
     margin: 0 auto;
     padding: 0;
 }
-body{width: 1920px; background: #0e141f;}
+body{width: 1902px; background: #0e141f;}
 body *{font-family: apple;}
 .eng{font-family: poppins;}
 
-header{width: 100%; position: fixed; top: 0; left:0; z-index: 1000; line-height: 0;}
-header img{width: 100%; line-height: 0;}
+header{width: 100%; margin: 0 auto; position: fixed; top: 0; z-index: 1000;line-height: 0;}
+header img{width: 100%;  line-height: 0;}
 section.slide{margin-top: 84px; background-color: #0e141f;}
 .swiper-container {
     width: 100%;
@@ -339,8 +339,8 @@ section{width: 100%;}
 }
 @media only screen and (min-width: 1921px){
     body{width:1920px !important; background: #fff;}
-    header{width: 1920px; left: 12.25%;}
-    header img{width: 100%;}
+    header{width: 1920px; margin: 0 auto; position: fixed; top: 0; z-index: 1000; }
+    header img{width: 100%; line-height: 0;}
 
     .swiper-container.swiper1{height: 996px !important;}
     .swiper-container-horizontal > .swiper-pagination-bullets{bottom: 5% !important;}
