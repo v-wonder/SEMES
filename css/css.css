@@ -15,7 +15,7 @@ header img{width: 100%;  line-height: 0;}
 section.slide{background-color: #0e141f;}
 .swiper-container {
     width: 100%;
-    height: 100%;
+    height: 996px;
 }
 .swiper-slide {
     font-size: 18px;
