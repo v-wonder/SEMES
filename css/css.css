@@ -341,6 +341,7 @@ section{width: 100%;}
     header{width: 1920px; margin: 0 auto; position: fixed; top: 0; left: 12.85%; z-index: 1000; }
     header img{width: 100%; line-height: 0;}
 
+    section.slide{margin-top: 83px;}
     .swiper-container.swiper1{height: 996px !important;}
     .swiper-container-horizontal > .swiper-pagination-bullets{bottom: 5% !important;}
 
