@@ -5,10 +5,16 @@
 @font-face{
     font-family: apple;
     font-weight: bold;
-    src: url('../fonts/AppleSDGothicNeoB.ttf');
+    src: url("../fonts/AppleSDGothicNeoB.ttf");
 }
 @font-face{
     font-family: apple;
     font-weight: normal;
-    src: url('../fonts/AppleSDGothicNeoL.ttf');
+    src: url("../fonts/AppleSDGothicNeoL.ttf");
+}
+
+@font-face{
+    font-family: poppins;
+    font-weight: bold;
+    src: url("../fonts/Poppins-SemiBold.ttf");
 }
