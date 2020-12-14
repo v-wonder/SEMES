@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="../Semes/css/import.css">
+    <script src="../Semes/js/jqery-3.5.1.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="../Semes/js/swiper-bundle.min.js"></script>
+</head>
+<style>
+</style>
+<body>
+    <header>
+        <div class="header_warp"><img src="../Semes/images/header.png" alt="header"></div>
+    </header>
+    <!-- header Fin -->
+
+    <section class="slide">
+        <div class="swiper-container swiper1">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide n_01">
+                    <dl>
+                        <dt>반도체는 우리와 매일<br>함께하고 있습니다</dt>
+                        <dd>SEMES는 현재를 넘어 미래를 만듭니다</dd>
+                        <dd><a href="#">SEMES에 대해 자세히 보기</a></dd>
+                    </dl>
+                    <img src="../Semes/images/slide_01.png" alt="no_1">
+                </div>
+                <div class="swiper-slide n_02">
+                    <dl>
+                        <dt>현재를 넘어 미래를<br>만듭니다</dt>
+                        <dd>과감한 투자와 끊임없는 연구개발 및 기술혁신을 통해,<br>SEMES는 전 세계 장비 시장을 선도해 나갈 것입니다.</dd>
+                        <dd><a href="#">기술소개 자세히 보기</a></dd>
+                    </dl>
+                    <img src="../Semes/images/slider_02.png" alt="no_2">
+                </div>
+                <div class="swiper-slide n_03">
+                    <dl>
+                        <dt>지속가능한 미래를<br>꿈꿉니다.</dt>
+                        <dd>세메스는 투명한 기업문화, 공정한 기업경영, 공정한 문화 조성으로<br>지속가능한 미래를 꿈꿉니다</dd>
+                        <dd><a href="#">지속가능경영 자세히 보기</a></dd>
+                    </dl>
+                    <img src="../Semes/images/slider_03.png" alt="no_3">
+                    
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- slideSection Fin -->
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'fade',
+            speed:2000,
+            // s
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>';
+                },
+            },
+        });
+
+        $(document).ready(function(){ 
+            $('.swiper1').css('height', $(window).height()- 84);
+            $(window).resize(function() { 
+                $('swiper1').css('height', $(window).height() -84); 
+            }); 
+        });
+    </script>
+
+    <section class="section 02">
+        <div><img src="../Semes/images/section_02.png" alt="section_02"></div>
+    </section>
+    
+    <div class="section_03">
+        <!-- <div class="caption">
+        <span class="border">SCROLL DOWN</span>
+        </div> -->
+    </div>
+    
+    <section class="section_04">
+        <div class="section_wrap">
+            <h3 class="move">세메스의<br>기술을 확인하세요</h3>
+            <span class="cap move"><img src="../Semes/images/section_03_text.png" alt="cap"></span>
+            <div class="prd_wrap">
+                <img src="../Semes/images/section_04_pd_01.png" alt="pd_01" class="move">
+                <img src="../Semes/images/section_04_pd_02.png" alt="pd_02" class="move">
+                <img src="../Semes/images/section_04_pd_03.png" alt="pd_03" class="move">
+                <img src="../Semes/images/section_04_pd_04.png" alt="pd_04" class="move">
+            </div>
+            <a href="#" class="move">세메스의 주요 생산장비</a>
+        </div>
+    </section>
+
+    <div class="section_05">
+        <!-- <div class="caption">
+        <span class="border" style="background-color:transparent;font-size:25px;color: #f7f7f7;">LESS HEIGHT</span>
+        </div> -->
+    </div>
+
+    <section class="section_06">
+        <div class="section_wrap">
+            <h3 class="move">세메스의<br>미래를 확인하세요</h3>
+            <span class="cap move"><img src="../Semes/images/section_03_text.png" alt="cap"></span>
+            <div class="prd_wrap">
+                <img src="../Semes/images/section_06_pd_01.png" alt="pd_01" class="move">
+                <img src="../Semes/images/section_06_pd_02.png" alt="pd_02" class="move">
+                <img src="../Semes/images/section_06_pd_03.png" alt="pd_03" class="move">
+                <img src="../Semes/images/section_06_pd_04.png" alt="pd_04" class="move">
+            </div>
+            <a href="#" class="move">세메스의 주요 생산장비</a>
+        </div>
+    </section>
+    <section class="section_07">
+        <div class="section_inner">
+            <div class="left_box move2">
+                <dl>
+                    <dt class="move">새로운 기회를 창조하는 기업,<br>세메스와 함께 하세요</dt>
+                    <dd class="move">세메스는 개인과 회사의 공동성장을 추구합니다. <br>창의적인 아이디어와 자유로운 소통문화를 장려하고 있으며 최고의<br> 엔지니어로 성장할 수 있도록 다양한 교육프로그램을 제공합니다</dd>
+                    <dd class="btn_box move"><a href="#">인재채용 자세히 보기</a></dd>
+                </dl>
+            </div>
+            <div class="right_box move">
+                <img src="../Semes/images/section_07_right.png" alt="s_07">
+            </div>
+        </div>
+    </section>
+
+    <section class="section_08">
+        <div class="section_wrap">
+            <h3>지속가능한 <br>미래를 꿈꿉니다</h3>
+            <div class="cont_01 move">
+                <img src="../Semes/images/section_08_cont_01.png" alt="cont_01">
+                <dl>
+                    <dt>공정한 <br>기업경영</dt>
+                    <dd><a href="#">윤리경영<img src="../Semes/images/arrow_right.png" alt="윤리경영"></a></dd>
+                </dl>
+            </div>
+            <div class="cont_02 move">
+                <img src="../Semes/images/section_08_cont_02.png" alt="cont_02">
+                <dl>
+                    <dt>공정거래 <br>문화조성</dt>
+                    <dd><a href="#">상생협력<img src="../Semes/images/arrow_right.png" alt="상생협력"></a></dd>
+                </dl>                
+            </div>
+            <div class="cont_03 move">
+                <img src="../Semes/images/section_08_cont_03.png" alt="cont_03">
+                <dl>
+                    <dt>투명한 <br>기업문화</dt>
+                    <dd><a href="#">준법경영<img src="../Semes/images/arrow_right.png" alt="준법경영"></a></dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section class="section_09">
+        <div class="section_inner">
+            <div class="left_box move4">
+                <img src="../Semes/images/section_09_left.png" alt="s_07">
+            </div>
+            <div class="right_box move2">
+                <dl>
+                    <dt class="move">새로운 기회를 창조하는 기업,<br>세메스와 함께 하세요</dt>
+                    <dd class="move">세메스는 개인과 회사의 공동성장을 추구합니다. <br>창의적인 아이디어와 자유로운 소통문화를 장려하고 있으며 최고의<br> 엔지니어로 성장할 수 있도록 다양한 교육프로그램을 제공합니다</dd>
+                    <dd class="btn_box move"><a href="#">인재채용 자세히 보기</a></dd>
+                </dl>
+            </div>
+        </div>
+
+    </section>
+    
+    <section class="section_10">
+        <div class="section_wrap move">
+            <dl>
+                <dt class="move">차별화된 제조 기술력으로 <br>새로운 기회를 창조합니다</dt>
+                <dd class="move"><a href="#">온라인 홍보관 자세히보기</a></dd>
+            </dl>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer_wrap">
+            <a href="../Semes/tech.html"><img src="../Semes/images/footer_bg.png" alt="footer"></a>
+        </div>
+    </footer>
+</body>
+<script>
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        var bh = $(window).height();
+        $('.move').each(function(){
+            var $this = $(this);
+            var my_st = $this.offset().top - (bh * 0.8);
+            if(st > my_st){
+                $this.addClass('active');
+            }
+        });
+    });
+    
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        var bh = $(window).height();
+        $('.move2').each(function(){
+            var $this = $(this);
+            var my_st = $this.offset().top - (bh * 0.5);
+            if(st > my_st){
+                $this.addClass('active');
+            }
+        });
+    });
+
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        var bh = $(window).height();
+        $('.move3').each(function(){
+            var $this = $(this);
+            var my_st = $this.offset().top - (bh * 0.5);
+            if(st > my_st){
+                $this.addClass('active');
+            }
+        });
+    });
+
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        var bh = $(window).height();
+        $('.move4').each(function(){
+            var $this = $(this);
+            var my_st = $this.offset().top - (bh * 0.5);
+            if(st > my_st){
+                $this.addClass('active');
+            }
+        });
+    });
+</script>
+</html>
