@@ -1,12 +1,12 @@
 
 body, html {
-    width: 1903px;
+    width: 1920px;
     position: relative;
     height: 100%;
     margin: 0 auto;
     padding: 0;
 }
-body{width: 1903px; background: #0e141f;}
+body{width: 1920px; background: #0e141f;}
 body *{font-family: apple;}
 .eng{font-family: poppins;}
 
@@ -338,9 +338,24 @@ section{width: 100%;}
     }
 }
 @media only screen and (min-width: 1921px){
-    header{width: 1903px; left: 12.6%;}
+    body{width:1920px !important; background: #fff;}
+    header{width: 1920px; left: 12.5%;}
     header img{width: 100%;}
     .fixed_btn{right: 360px;}
+    
+    .section_03 {
+        background-image: url("../images/section_03.png");
+        background-size: 85% 75%;
+        background-position: center;
+        min-height: 850px;
+    }
+
+    .section_05 {
+        background-image: url("../images/section_05.png");
+        background-size: 85% 75%;
+        background-position: center;
+        min-height: 8500px;
+    }
 }
 
 .move{
