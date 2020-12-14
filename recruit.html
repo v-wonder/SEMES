@@ -10,11 +10,22 @@
 <style>
     body{background: #fff;}
 </style>
-<body>
+<body class="recruit">
     <header>
-        <div class="header_warp"><img src="../Semes/images/header.png" alt="header"></div>
+        <div class="header_warp">
+            <img src="../Semes/images/header.png" alt="header" usemap="#menu">
+            <map name="menu" id="menu">
+                <area shape="rect" coords="59,23,214,59" href="../Semes/index.html" alt="home" target="blank">
+                <area shape="rect" coords="758,34,818,51" href="../Semes/tech.html" alt="tech" target="blank">
+                <area shape="rect" coords="1060,34,1122,51" href="../Semes/recruit.html" alt="tech" target="blank">
+            </map>
+        </div>
     </header>
     <!-- header Fin -->
+    
+    <div class="fixed_btn">
+        <a href="#"><img src="../Semes/images/fixed_btn.png" alt="버튼"></a>
+    </div>
     
     <section class="section_recruit">
         <div class="recruit_wrap">
@@ -25,11 +36,130 @@
                     사람과 기술을 중시하고 끊임없이 성장하는 사람 <br>
                     꿈과 열정 그리고 책임감을 갖춘 글로벌 리더를 찾습니다.
                 </dd>
-                <a href="#" class="go_to">인재채용 바로가기</a>
+                <a href="#" class="go_to">인재채용 바로가기<img src="../Semes/images/arrow_rotate.png" alt="arrow" style="padding-left: 10px;"> </a>
                 <a href="#"><span style="display: inline-block; width: 8px; height: 8px; vertical-align: top; margin-top: 2px; background-color: #0fa5d7; border-radius: 100%;"></span>&nbsp;&nbsp;&nbsp;Scroll</a>
             </dl>
         </div>
     </section>
+
+    <section id="zoom" class="section_recruit_02">
+        <div class="recruit_02_wrap">
+            <dl>
+                <dt class="move">채용 프로세스</dt>
+                <dd class="move eng">Join us <br>in the changing world</dd>
+            </dl>
+        </div>
+    </section>
+
     
+
+    <section class="recruit_03">
+        <div class="recruit_03_wrap">
+            <div class="recruit_cont_01 move">
+                <dl>
+                    <img src="../Semes/images/recruit_cont_01.png" alt="cont_01" class="move">
+                    <dt class="move eng">PERSONALITY</dt>
+                    <dd class="move">긍정적인 사고와 도덕심을 겸비한 사람<br>
+                        상대방이 있기에 나도 있다는 마음으로 서로를<br>
+                        배려할 줄 아는 협동하는 조직인
+                    </dd>
+                </dl>
+            </div>
+            <div class="recruit_cont_02 move">
+                <dl>
+                    <img src="../Semes/images/recruit_cont_02.png" alt="cont_02" class="move">
+                    <dt class="move eng">PROFESSIONAL</dt>
+                    <dd class="move">단순한 개선이 아닌 끝없이 학습하고 새로움을 <br>
+                        추구하는 사람, 혁신적인 솔루션을 찾아내기 위해<br>
+                        부단히 노력하는 열린 사고를 가진 프로페셔널리즘의 소유자<br>
+                    </dd>
+                </dl>
+            </div>
+            <div class="recruit_cont_03 move">
+                <dl>
+                    <img src="../Semes/images/recruit_cont_03.png" alt="cont_03" class="move">
+                    <dt class="move eng">CHALLENGE</dt>
+                    <dd class="move">더 높은 수준의 목표를 위해 현실에 안주하지 않고 <br>
+                        끊임없이 도전하고 이를 끝까지 완수해 내고자 <br>
+                        노력과 변화를 주도하는, 세계 최고에 도전하는 개척자<br>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <section id="zoom2" class="section_recruit_04">
+        <div class="recruit_04_wrap">
+            <dl>
+                <dt class="move">채용 프로세스</dt>
+                <dd class="move">기업이념, 경영이념 등의 정신을 바탕으로 <br>투명한 채용 프로세스를 운영합니다</dd>
+            </dl>
+        </div>
+    </section>
+    <section class="section_recruit_05">
+        <img src="../Semes/images/recruit_05_top.png" alt="re_pro">
+        <div class="recruit_05_wrap">
+            <img src="../Semes/images/recruit_05_cont_01.png" alt="지원서 접수" class="move">
+            <img src="../Semes/images/recruit_05_cont_02.png" alt="지원서 검토" class="move">
+            <img src="../Semes/images/recruit_05_cont_03.png" alt="삼성직무적성검사" class="move">
+            <img src="../Semes/images/recruit_05_cont_04.png" alt="면접" class="move">
+            <img src="../Semes/images/recruit_05_cont_05.png" alt="건강검진" class="move">
+            <img src="../Semes/images/recruit_05_cont_06.png" alt="최종합격" class="move">
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer_wrap">
+            <a href="../Semes/index.html"><img src="../Semes/images/footer_bg.png" alt="footer"></a>
+        </div>
+    </footer>
 </body>
+<script>
+    $(document).ready(function(){
+        $(function(){
+            var lastScroll = 0;
+            $(window).scroll(function(event){
+                    var scroll = $(this).scrollTop();
+                    if (scroll > 380){
+                    //이벤트를 적용시킬 스크롤 높이
+                        $("#zoom").addClass("B");
+                    }
+                    else{
+                        $("#zoom").removeClass("B");
+                    }
+                    lastScroll = scroll;
+            });
+        });
+    });
+
+    $(window).scroll(function(){
+        var st = $(window).scrollTop();
+        var bh = $(window).height();
+        $('.move').each(function(){
+            var $this = $(this);
+            var my_st = $this.offset().top - (bh * 0.8);
+            if(st > my_st){
+                $this.addClass('active');
+            }
+        });
+    });
+
+    $(document).ready(function(){
+        $(function(){
+            var lastScroll = 0;
+            $(window).scroll(function(event){
+                    var scroll = $(this).scrollTop();
+                    if (scroll > 2900){
+                    //이벤트를 적용시킬 스크롤 높이
+                        $("#zoom2").addClass("B");
+                    }
+                    else{
+                        $("#zoom2").removeClass("B");
+                    }
+                    lastScroll = scroll;
+            });
+        });
+    });
+
+</script>
 </html>
