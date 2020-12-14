@@ -338,7 +338,7 @@ section{width: 100%;}
 }
 @media only screen and (min-width: 1921px){
     body{width:1920px !important; background: #fff;}
-    header{width: 1920px; margin: 0 auto; position: fixed; top: 0; left: 12.85%; z-index: 1000; }
+    header{width: 1920px; margin: 0 auto; position: fixed; top: 0; left: 12.63%; z-index: 1000; }
     header img{width: 100%; line-height: 0;}
 
     section.slide{margin-top: 83px;}
