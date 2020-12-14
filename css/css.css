@@ -339,7 +339,7 @@ section{width: 100%;}
 }
 @media only screen and (min-width: 1921px){
     body{width:1920px !important; background: #fff;}
-    header{width: 1920px; left: 12.5%;}
+    header{width: 1920px; left: 12.25%;}
     header img{width: 100%;}
 
     .swiper-container.swiper1{height: 996px !important;}
@@ -360,6 +360,8 @@ section{width: 100%;}
         background-position: center;
         min-height: 850px;
     }
+    .section_07 .left_box,
+    .section_09 .right_box{width:860px}
 }
 
 .move{
