@@ -318,17 +318,16 @@ section{width: 100%;}
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
-    background-size: 100%;
 
 }
 .section_03 {
     background-image: url("../images/section_03.png");
-    min-height: 900px;
+    height: 900px;
 }
 
 .section_05 {
     background-image: url("../images/section_05.png");
-    min-height: 900px;
+    height: 900px;
 }
 
 /* Turn off parallax scrolling for tablets and phones */
@@ -349,19 +348,18 @@ section{width: 100%;}
     
     .section_03 {
         background-image: url("../images/section_03.png");
-        background-size: 85% 75%;
         background-position: center;
-        min-height: 850px;
     }
 
     .section_05 {
         background-image: url("../images/section_05.png");
-        background-size: 85% 75%;
         background-position: center;
-        min-height: 850px;
     }
     .section_07 .left_box,
     .section_09 .right_box{width:860px}
+}
+@media only screen and (min-width: 2566px){
+    .fixed_btn{right: 960px;}
 }
 
 .move{
