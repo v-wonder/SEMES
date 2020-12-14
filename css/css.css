@@ -6,7 +6,7 @@ body, html {
     margin: 0 auto;
     padding: 0;
 }
-body{width: 1902px; background: #0e141f;}
+body{width: 100%; background: #0e141f;}
 body *{font-family: apple;}
 .eng{font-family: poppins;}
 
